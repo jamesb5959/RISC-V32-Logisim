@@ -1,0 +1,35 @@
+# Truth table
+# Generated from circuit ALU_control
+# Exported on Sun Apr 17 20:53:57 MDT 2022
+
+# Hints and Notes on Formatting:
+# * You can edit this file then import it back into Logisim!
+# * Anything after a '#' is a comment and will be ignored.
+# * Blank lines and separator lines (e.g., ~~~~~~) are ignored.
+# * Keep column names simple (no spaces, punctuation, etc.)
+# * 'Name[N..0]' indicates an N+1 bit variable, whereas
+#   'Name' by itself indicates a 1-bit variable.
+# * You can use 'x' or '-' to indicate "don't care" for both
+#   input and output bits.
+# * You can use binary (e.g., '10100011xxxx') notation or
+#   or hex (e.g., 'C3x'). Logisim will figure out which is which.
+
+I30 I14 I13 I12 I6 I5 I4 | ALU_CTRL3 ALU_CTRL2 ALU_CTRL1 ALU_CTRL0 ALU_SRC
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 0   1   1   1  0  1  1  |     0         0         0         0        0
+ 0   1   1   0  0  1  1  |     0         0         0         1        0
+ 0   1   0   0  0  1  1  |     0         0         1         0        0
+ 0   0   0   0  0  1  1  |     0         0         1         1        0
+ 1   0   0   0  0  1  1  |     0         1         1         1        0
+ x   1   1   1  0  0  1  |     0         0         0         0        1
+ x   1   1   0  0  0  1  |     0         0         0         1        1
+ x   1   0   0  0  0  1  |     0         0         1         0        1
+ x   0   0   0  0  0  1  |     0         0         1         1        1
+ x   0   1   0  0  0  0  |     0         0         1         1        1
+ x   0   1   0  0  1  0  |     0         0         1         1        1
+ 0   0   0   1  0  1  1  |     1         0         0         0        0  
+ 0   1   0   1  0  1  1  |     1         0         0         1        0  
+ 1   1   0   1  0  1  1  |     1         0         1         0        0 
+ 0   0   0   1  0  0  1  |     1         0         0         0        1   
+ 0   1   0   1  0  0  1  |     1         0         0         1        1  
+ 1   1   0   1  0  0  1  |     1         0         1         0        1 
